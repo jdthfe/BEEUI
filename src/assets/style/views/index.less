@@ -1,0 +1,48 @@
+html,body{
+  height:100%;
+}
+#app{
+  height:100%;
+}
+.index-body {
+  background: url('../../images/index-sm.jpg') no-repeat center center;
+  height: 100%;
+  width: 100%;
+  .mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(55, 55, 55, .4);
+    height: 100%;
+    z-index: 1000;
+  }
+  .index-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    .index-con {
+      z-index: 1001;
+      position: relative;
+    }
+    .txt-logo{
+      color:#fff;
+      font-size: 50px;
+      line-height: 80px;
+      // font-family: 'PingFang Medium';
+    }
+    .txt-con{
+      color:#fff;
+      font-size: 30px;
+      line-height: 60px;
+    }
+    .ga-btn-info{
+      a{
+        color:#fff;
+      }
+    }
+  }
+}

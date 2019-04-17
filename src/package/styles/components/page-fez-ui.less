@@ -1,0 +1,332 @@
+@import "../lib/mixins";
+@import "../lib/normalize";
+
+
+/******************* 基础input样式 *******************/
+
+@borderColor:#d8d8d8;
+//输入框文字颜色
+@inputFontColor: #999999;
+
+@basicBlueColor:#6FA1E0;
+
+.ga-input{
+	border:1px solid @borderColor;
+	height:32px;
+	line-height:24px;
+	// width:340px;
+	font-size: 12px;
+	color: @inputFontColor;
+	cursor: text;
+    padding: 4px 7px;
+    .border-radius(4px,4px,4px,4px);
+    background-color: #fff;
+    background-image: none;
+    transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+
+    &:focus{
+    	outline: 0;
+     	border-color: @basicBlueColor;
+    }
+    &:hover{
+    	border-color: @basicBlueColor;
+    }
+
+}
+.ga-input[disabled]{
+	&:focus{
+    	outline: 0;
+     	border-color: @borderColor;
+    }
+    &:hover{
+    	border-color: @borderColor;
+    }
+}
+
+.ga-textarea{
+	border:1px solid @borderColor;
+	height:32px;
+	line-height:24px;
+	// width:340px;
+	font-size: 12px;
+	color: @inputFontColor;
+	cursor: text;
+    padding: 4px 7px;
+    .border-radius(4px,4px,4px,4px);
+    background-color: #fff;
+    background-image: none;
+    transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+
+    &:focus{
+    	outline: 0;
+     	border-color: @basicBlueColor;
+    }
+    &:hover{
+    	border-color: @basicBlueColor;
+    }
+
+}
+.ga-textarea[disabled]{
+	&:focus{
+    	outline: 0;
+     	border-color: @borderColor;
+    }
+    &:hover{
+    	border-color: @borderColor;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+
+
+
+
+// 确认框header下边框颜色
+@modalHeaderBorderColor:#6FA1E0;
+
+/******************* 基础模态框样式 *******************/
+.ga-modal-mask{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    left: 0;
+    background-color: rgba(55,55,55,.6);
+    height: 100%;
+}
+.ga-modal-wrap{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .ga-modal{
+    	margin: 0 auto;
+	    position: relative;
+	    outline: 0;
+	    top: 100px;
+    }
+    .ga-modal-content{
+	    position: relative;
+	    background-color: #fff;
+	    border: 0;
+	    border-radius: 6px;
+	    background-clip: padding-box;
+    }
+    .ga-modal-close{
+		position:absolute;
+		right: 10px;
+	    font-size: 32px;
+	    line-height:40px;
+	    color:#ccc;
+	    cursor:pointer;
+	    z-index:999;
+	}
+	.ga-modal-footer{
+		text-align: center;
+	}
+	.ga-modal-content{
+		.box-shadow(0 5px 15px #222);
+
+		.ga-modal-header{
+			border-bottom:1px solid @modalHeaderBorderColor;
+			margin:0;
+			padding:0;
+			height: 40px;
+			position: relative;
+			.ga-modal-title-center{
+				text-align: center;
+				font-size: 14px;
+				color:#333333;
+				line-height: 40px;
+			}
+
+		}
+		.ga-modal-body{
+			padding:20px;
+		}
+		.ga-modal-footer{
+			text-align: center;
+		}
+	}
+}
+.ga-modal-hidden{
+	display:none;
+}
+
+
+// 字体颜色
+@fontColor:#fff;
+
+
+/**
+ * 错误按钮变量
+ */
+@backgroundColorErro:#f73;
+@borderColorErro:#f73;
+/**成功按钮**/
+@backgroundColorSuccess:#33d685;
+@borderColorSuccess:#33d685;
+
+/**警告按钮**/
+@backgroundColorWarning:#ffad33;
+@borderColorWarning:#ffad33;
+
+/******************* 基础按钮样式 *******************/
+.ga-btn{
+	width: 80px;
+	background: #fff;
+	outline:none !important;
+	font-size: 12px;
+	border:1px solid @borderColor;
+	transition:color .2s linear,background-color .2s linear,border .2s linear
+}
+.ga-btn-circle{
+	.border-radius(16px,16px,16px,16px);
+}
+.ga-btn.disabled, .ga-btn[disabled]{
+	opacity: 1;
+	color:@borderColor;
+	border:1px solid @borderColor;
+}
+.ga-btn.disabled:hover, .ga-btn[disabled]:hover{
+	color:@borderColor;
+	border:1px solid @borderColor;
+}
+.ga-btn:hover{
+	color:@basicBlueColor;
+	border:1px solid @basicBlueColor;
+}
+
+/**
+ * primary
+ */
+.ga-btn-primary:focus, .ga-btn-primary:active:focus, .ga-btn-primary.active:focus, .ga-btn-primary.focus, .ga-btn-primary:active.focus, .ga-btn-primary.active.focus{
+	color:@basicBlueColor;
+}
+.ga-btn-primary{
+	background:@basicBlueColor;
+	// border:1px solid @basicBlueColor;
+	color:@fontColor;
+	&:hover{
+		color:@fontColor;
+	}
+}
+
+/**
+ * success
+ */
+.ga-btn-success:focus, .ga-btn-success:active:focus, .ga-btn-success.active:focus, .ga-btn-success.focus, .ga-btn-success:active.focus, .ga-btn-success.active.focus{
+	color:@basicBlueColor;
+}
+.ga-btn-success{
+	background:@backgroundColorSuccess;
+	color:@fontColor;
+	&:hover{
+		border:1px solid @borderColorSuccess;
+		color:@fontColor;
+	}
+}
+
+/**
+ * warning
+ */
+.ga-btn-warning:focus, .ga-btn-warning:active:focus, .ga-btn-warning.active:focus, .ga-btn-warning.focus, .ga-btn-warning:active.focus, .ga-btn-warning.active.focus{
+	color:@basicBlueColor;
+}
+.ga-btn-warning{
+	background:@backgroundColorErro;
+	color:@fontColor;
+	&:hover{
+		border:1px solid @borderColorErro;
+		color:@fontColor;
+	}
+}
+
+/**
+ * error
+ */
+.ga-btn-error:focus, .ga-btn-error:active:focus, .ga-btn-error.active:focus, .ga-btn-error.focus, .ga-btn-error:active.focus, .ga-btn-error.active.focus{
+	color:@basicBlueColor;
+}
+.ga-btn-error{
+	background:@backgroundColorWarning;
+	color:@fontColor;
+	&:hover{
+		border:1px solid @borderColorWarning;
+		color:@fontColor;
+	}
+}
+
+
+/*********进度条样式************/
+.ga-progress {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+}
+.ga-progress-show-info .ga-progress-outer {
+    padding-right: 55px;
+    margin-right: -55px;
+}
+.ga-progress-outer {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+}
+.ga-progress-inner {
+    display: inline-block;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+.ga-progress-bg {
+    border-radius: 100px;
+    background-color: #2db7f5;
+    transition: all .2s linear;
+    position: relative;
+}
+.ga-progress-text {
+    display: inline-block;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 1em;
+    vertical-align: middle;
+}
+.ga-progress-text {
+    display: inline-block;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 1em;
+    vertical-align: middle;
+}
+.ga-progress-active .ga-progress-bg:before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 10px;
+    animation: ga-progress-active 2s ease-in-out infinite;
+}

@@ -1,0 +1,101 @@
+<template>
+  <v-page>
+    <ga-row>
+      <basic/>
+    </ga-row>
+    <ga-panel moduleName="API说明">
+      <ga-row>
+        <div class="api">
+          <h4>api</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>属性</th>
+                <th>说明</th>
+                <th>类型</th>
+                <th>默认值</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>value</td>
+                <td>v-model绑定的值</td>
+                <td>Array</td>
+                <td>[]</td>
+              </tr>
+              <tr>
+                <td>all-areas</td>
+                <td>地址全量值</td>
+                <td>Array</td>
+                <td>[]</td>
+              </tr>
+              <tr>
+                <td>width</td>
+                <td>外层宽度设置，会影响弹出层的宽度</td>
+                <td>Number</td>
+                <td>450</td>
+              </tr>
+              <tr>
+                <td>input-width</td>
+                <td>input框宽度设置</td>
+                <td>Number</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>max-deep</td>
+                <td>最大层级深度设置</td>
+                <td>Number</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>append-to-body</td>
+                <td>下拉弹窗是否添加到body中</td>
+                <td>Boolean</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>placement</td>
+                <td>弹出层方向设置</td>
+                <td>String</td>
+                <td>bottom</td>
+              </tr>
+              <tr>
+                <td>placeholder</td>
+                <td>提示文字设置</td>
+                <td>String</td>
+                <td>请选择省市区</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>事件</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>事件名</th>
+                <th>说明</th>
+                <th>返回值</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>on-change</td>
+                <td>点击选中触发改变事件</td>
+                <td>Function</td>
+                <td>Array</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ga-row>
+    </ga-panel>
+  </v-page>
+</template>
+<script>
+import basic from './module/basic.vue';
+export default {
+  components: {
+    basic,
+  }
+}
+
+</script>

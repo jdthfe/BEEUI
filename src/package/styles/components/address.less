@@ -1,0 +1,74 @@
+.fl {
+  float: left;
+}
+.clearfix:after{
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.ga-adress-wrap {
+  position: relative;
+  height: 32px;
+  cursor: pointer;
+}
+.ga-adress-text-wrap {
+  min-width: 142px;
+  float: left;
+  position: relative;
+  top: 0;
+  height: 32px;
+  color: #657180;
+  background: #fff;
+  border: 1px solid #CECBCE;
+  padding: 0px 7px;
+  line-height: 30px;
+  overflow: hidden;
+  z-index: 3;
+  font-size: 12px;
+  line-height: 32px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+.ga-address-dropdown-body {
+  overflow-x: hidden;
+}
+.ga-adress-content-wrap {
+  padding: 12px 12px 15px;
+  background: #fff;
+  .tab-wrap {
+    height: 30px;
+    border-bottom: 2px solid @primary-color;
+    .tab-item {
+      border-bottom: 0px;
+      border-top: 1px solid #d7dde4;
+      border-left: 1px solid #d7dde4;
+      border-right: 1px solid #d7dde4;
+      padding: 3px 10px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      margin-left: 7px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+    .tab-item-select {
+      border-bottom: 0px;
+      border-top: 2px solid @primary-color;
+      border-left: 2px solid @primary-color;
+      border-right: 2px solid @primary-color;
+      height: 30px;
+      background: #fff;
+    }
+  };
+  .ga-adress-btn {
+    width: 130px;
+    padding: 10px 8px;
+    cursor: pointer;
+  }
+  .ga-address-address-select {
+    color: @primary-color;
+  }
+}
