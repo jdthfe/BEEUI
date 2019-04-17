@@ -7,7 +7,7 @@
           <h3>项目支持:</h3>
         </div>
         <ul>
-          <li><a href="http://123.jd.com/views/index.html" target="_blank">数据管家</a></li>
+            <li><a href="https://jd.co.th" target="_blank">泰国版PC</a></li>
         </ul>
       </ga-panel>
       <ga-panel moduleName="单页面应用脚手架" :moduleIcon="moduleIcon">
@@ -16,11 +16,7 @@
           <h3>项目支持:</h3>
         </div>
         <ul>
-          <li><a href="http://jdp.jd.com/systems/jdpweb/index.html#/subscription" target="_blank">京东动力新版pc端</a></li>
-          <li><a href="http://b-ufo.jd.com/views/odm/#/" target="_blank">订单全流程</a></li>
-          <li><a href="http://b-ufo.jd.com/views/uns/#/realtime-screen-index" target="_blank">统一大屏</a></li>
-          <li><a href="http://b-ufo.jd.com/views/uns/#/realtime-statistical-classification" target="_blank">新分类统计</a></li>
-          <li><a href="http://jdp-mobile.jd.com/app/subscribe" target="_blank">京东动力移动端</a></li>
+          <li><a href="http://jdc.jd.co.th/#/realtimescreen" target="_blank">可视化大屏</a></li>
         </ul>
       </ga-panel>
       <ga-panel moduleName="单页面应用ssr后端渲染脚手架" :moduleIcon="moduleIcon">
@@ -29,7 +25,7 @@
           <h3>项目支持:</h3>
         </div>
         <ul>
-          <li><a href="http://jdpm.jd.com/app/subscribe" target="_blank">京东动力移动端node版</a></li>
+          <li><a href="http://jdpm.jd.com/app/subscribe" target="_blank">PC端活动页</a></li>
         </ul>
       </ga-panel>
     </ga-row>

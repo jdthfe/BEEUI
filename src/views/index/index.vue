@@ -4,7 +4,7 @@
       <ga-col span="24">
         <div class="index-con">
           <div class="txt-logo">
-            Gamma FE
+            ZOO FE
           </div>
           <div class="txt-con">
             {{$t("index.title")}}

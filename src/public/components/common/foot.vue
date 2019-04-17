@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div>{{copyRight}}</div>
-    <div style="color:rgb(255, 51, 0)">联系我们：咚咚群号：5852348，验证信息：gamma</div>
+    <div style="color:rgb(255, 51, 0)"></div>
   </div>
 </template>
 <style>

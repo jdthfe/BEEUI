@@ -1,17 +1,11 @@
 {
   "_from": "git+http://source.jd.com/app/fez-ui.git",
-  "_id": "gaui@2.2.18",
+  "_id": "BEEUI@1.0.0",
   "_inBundle": false,
-  "_location": "/gaui",
+  "_location": "/BEEUI",
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "gaui@git+http://source.jd.com/app/fez-ui.git",
-    "name": "gaui",
-    "escapedName": "gaui",
-    "rawSpec": "git+http://source.jd.com/app/fez-ui.git",
-    "saveSpec": "git+http://source.jd.com/app/fez-ui.git",
-    "fetchSpec": "http://source.jd.com/app/fez-ui.git",
     "gitCommittish": null
   },
   "_requiredBy": [
@@ -21,7 +15,7 @@
   "_spec": "gaui@git+http://source.jd.com/app/fez-ui.git",
   "_where": "/Users/huangjunfeng/work/realtime-large-screen",
   "author": {
-    "name": "wangqi"
+    "name": ""
   },
   "browserslist": [
     "> 1%",
@@ -34,7 +28,7 @@
     "popper.js": "^1.14.1"
   },
   "deprecated": false,
-  "description": "gamma前端小组组件开发",
+  "description": "ZOO前端小组组件开发",
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "axios": "^0.17.1",

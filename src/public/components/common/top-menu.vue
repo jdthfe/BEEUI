@@ -48,29 +48,26 @@ export default {
           value: '文档',
           name: '1',
           target: '_self'
-        }, {
-          href: 'http://192.168.200.127:8080/fed-module/index.html#/',
-          value: '模块集市',
-          name: '2',
-          target: '_blank'
-        },
+        }, 
+        // {
+        //   href: '#/cli',
+        //   value: '脚手架',
+        //   name: '4',
+        //   target: '_self'
+        // }, 
         {
-          href: '#/cli',
-          value: '脚手架',
-          name: '4',
-          target: '_self'
-        }, {
-          href: 'http://192.168.200.127:8080/gaui-widgets/dist/#/',
+          href: '#/',
           value: '业务组件',
           name: '6',
-          target: '_blank'
-        }, {
-          href: 'http://192.168.200.127:8080/gammadoc/',
-          value: '前端团队规范',
-          name: '5',
-          target: '_blank',
-          color: '#ff3300'
+          target: '_self'
         }
+        // , {
+        //   href: 'http://192.168.200.127:8080/gammadoc/',
+        //   value: '前端团队规范',
+        //   name: '5',
+        //   target: '_blank',
+        //   color: '#ff3300'
+        // }
       ],
       activeName: '',
       urlList: [{

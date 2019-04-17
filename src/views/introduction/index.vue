@@ -49,21 +49,13 @@
                 <h2>{{$t("introduction.h24.title")}}</h2>
               </div>
               <ul>
-                <li><a href="http://123.jd.com/views/index.html" target="_blank">数据管家（gaui2.2.6分支支撑）</a></li>
-                <li><a href="http://b-ufo.jd.com/views/odm/#/" target="_blank">订单全流程（gaui2.4.0分支支撑）</a></li>
-                <li><a href="http://b-ufo.jd.com/views/uns/#/realtime-screen-index" target="_blank">统一大屏（master分支）</a></li>
-                <li><a href="http://b-ufo.jd.com/views/uns/#/realtime-statistical-classification" target="_blank">新分类统计（master分支）</a></li>
-                <li><a href="http://pwd.jd.com/views/oa/" target="_blank">新权限系统（master分支）</a></li>
-                <li><a href="#/introduction" target="_blank">ui组件文档平台（master分支支撑）</a></li>
-                <li><a>Tag系统（master分支支撑）</a></li>
-                <li><a>场景穿插（master分支支撑）</a></li>
-                <li><a>知识提报（master分支支撑）</a></li>
-                <li><a>商搜系统（master分支支撑）</a></li>
+                <li><a href="http://123.jd.com/views/index.html" target="_blank">demo</a></li>
+                
               </ul>
               <div class="anchor">
                 <h2>{{$t("introduction.h25.title")}}</h2>
                 <ul>
-                  <li>咚咚群号：5852348，验证信息：gamma</li>
+                  <li></li>
                 </ul>
               </div>
             </article>

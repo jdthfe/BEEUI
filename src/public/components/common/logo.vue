@@ -8,7 +8,7 @@ export default {
   name: "logo",
   data() {
     return {
-      systemName: "Ga-UI",
+      systemName: "Bee-UI",
       logoIcon: ""
     }
   }
