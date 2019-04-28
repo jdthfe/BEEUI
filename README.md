@@ -41,10 +41,10 @@ npm run unit
 
 
 # 目录基本介绍
-src/views/* 文档示例文件
-src/package/* 组件源码目录
-lib/* 组件源码打包存放目录
-dist/* 文档示例打包存放目录
+src/views/* 文档示例文件  
+src/package/* 组件源码目录  
+lib/* 组件源码打包存放目录  
+dist/* 文档示例打包存放目录  
 
 # 项目支持情况：
   
